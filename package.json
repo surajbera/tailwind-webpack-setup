@@ -1,0 +1,35 @@
+{
+  "name": "static-web-page-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate code to create a static web page",
+  "main": "index.js",
+  "scripts": {
+    "compile:tailwindcss": "tailwindcss -i ./assets/css/input.css -o ./dist/style.css --watch",
+    "build:js": "webpack",
+    "dev": "concurrently \"npm run compile:tailwindcss\" \"npm run build:js\""
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "webpack",
+    "postcss",
+    "sass"
+  ],
+  "author": "Suraj Bera",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "autoprefixer": "^10.4.15",
+    "babel-loader": "^9.1.2",
+    "concurrently": "^8.1.0",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3",
+    "webpack": "^5.85.0",
+    "webpack-cli": "^5.1.1"
+  },
+  "browserslist": [
+    "> .5% or last 2 versions"
+  ]
+}
